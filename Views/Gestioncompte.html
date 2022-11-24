@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Elishop &mdash; Nos produits sont les meilleures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+ <style type="text/css" >
+    #inputcompte{
+    	width: 700px;
+    	margin-left: 94px;
+    }
+</style>
+	</head>
+	<body>
+		
+
+	<header id="fh5co-header" role="banner">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header"> 
+				
+				<a  class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+				<a class="navbar-brand" href="../index.html">ELISHOP</a>
+				
+				
+				</div>
+				
+				
+				
+				<div id="fh5co-navbar" class="navbar-collapse collapse">
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li ><a href="../index.html"><span>ACCEUIL <span class="border"></span></span></a></li>
+						<li><a href="pc-portables.html"><span>PC PORTABLES <span class="border"></span></span></a></li>
+						<li><a href="telephones.html"><span>TELEPHONES <span class="border"></span></span></a></li>
+						<li ><a href="cameras.html"><span>APPAREILS PHOTO <span class="border"></span></span></a></li>
+						<li ><a href="televisions.html"><span>TELEVISIONS <span class="border"></span></span></a></li>
+						
+						<li class="active">
+							
+					<div class="dropdown" id="gestionAdmin" style="margin-top: 5px;">
+								   
+								 <a class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" id="dropdownMenuButton" >
+   											 
+
+								  		<span>Gestion<span class="border"></span></span>
+								 </a>
+								  <div class="dropdown-menu"  aria-labelledby="dropdownMenuButton"   style="min-width: 360px !important;  padding: 21px !important;"  >
+								  
+								    <div class="form-group" class="px-4 px-3">
+								      <a href="Gestionproduits.html">Gestion des produits</a>
+								    </div>
+								    <div class="form-group" class="px-4 px-3">
+								      <a href="Gestioncompte.html">Gestion des comptes</a>
+								    </div>
+								    
+									<button type="button" onclick="deconnexion()" id="deconnecter" class="btn btn-primary">Se déconnecter</button>
+								</div>
+
+						</li>
+			  							
+					</ul>
+
+										 
+								</div>
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- END .header -->
+	
+<aside class="fh5co-page-heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="fh5co-page-heading-lead">
+						Les comptes
+						<span class="fh5co-border"></span>
+					</h1>
+					
+				</div>
+			</div>
+		</div>
+	</aside>
+	
+	<div style="text-align: center;">
+		
+		<button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg"> Ajouter Compte</button>
+        
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                                  <div class="modal-dialog modal-lg">
+                                  <div class="modal-content">
+
+					
+
+					
+				<form action="#" class="fh5co-form animate-box" method="post" data-animate-effect="fadeIn" style="text-align: center;">
+						<h2>Ajouter Compte</h2>
+			
+	<div class="form-group" id="inputcompte">
+			<label for="dropRole" class="sr-only">Role</label>
+	  
+            <select  style="width: 700px;" id="role" >
+               <option  disabled selected>Choisissez un role</option>
+               <option value="Admin">Admin</option>
+               <option value="Client">Client</option>
+            </select>
+							
+	</div>
+				<div class="form-group" id="inputcompte">
+				<label for="nom" class="sr-only">Nom</label>
+				<input type="text" class="form-control" id="nom" placeholder="Nom" autocomplete="off" style="width: 700px;">
+				</div>
+						<div class="form-group" id="inputcompte" >
+							<label for="prenom" class="sr-only">Prenom</label>
+							<input type="text" class="form-control" id="prenom" placeholder="Prenom" autocomplete="off">
+						</div>
+						<div class="form-group" id="inputcompte">
+							<label for="adresse" class="sr-only">Adresse</label>
+							<input type="text" class="form-control" id="adresse" placeholder="Adresse" autocomplete="off">
+						</div>
+						
+						<div class="form-group" id="inputcompte" >
+							<label for="telephone" class="sr-only">Telephone</label>
+							<input type="text" class="form-control" id="telephone" placeholder="Telephone" autocomplete="off">
+						</div>
+						<div class="form-group" id="inputcompte" >
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="email@exemple.com" autocomplete="off">
+						</div>
+						<div class="form-group" id="inputcompte">
+							<label for="password" class="sr-only">Mot de passe</label>
+							<input type="password" class="form-control" id="password" placeholder="mot de passe" autocomplete="off">
+						</div>
+						<div class="form-group" id="inputcompte">
+							<label for="confirmationMDP" class="sr-only">Confirmation du mot de passe </label>
+							<input type="password" class="form-control" id="confirmationMDP" placeholder="Confirmation du mot de passe" autocomplete="off">
+						</div>
+						<label  style="color: red; display: none;" id="erreurPasse">Le mot de passe et la confirmation ne sont pas identiques </label>
+						<div class="form-group" >
+							<input type="button" onclick="insererCompte()" value="Enregistrer" class="btn btn-primary">
+						</div>
+					</form>
+					
+                                    </div>
+                                    </div>
+                                    </div>
+
+<div class="table-responsive">
+     <table id="compte" class="table table-striped">
+     <tr>
+     	<th style="text-align: center;">Nom</th>
+     	<th style="text-align: center;">Prenom</th>
+     	<th style="text-align: center;">Adresse</th>
+     	<th style="text-align: center;">Telephone</th>
+     	<th style="text-align: center;">E-mail</th>
+     	<th style="text-align: center;">Role</th>
+     	<th style="text-align: center;">Modifier</th>
+     	<th style="text-align: center;">Supprimer</th>
+     </tr>
+     </table>
+   </div>
+	</div>
+
+    
+
+	
+
+	<footer id="fh5co-footer">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="fh5co-footer-widget">
+							<h2 class="fh5co-footer-logo">ELISHOP</h2>
+						<p>Ce site est à votre disposition 24h/24 7j/7 avec experience professionnelle dans le monde du HIGH TECHNOLOGIES</p>
+					</div>
+					<div class="fh5co-footer-widget">
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead ">ENTREPRISE</h4>
+						<ul>
+							<li><a href="#">QUI SOMMES-NOUS ?</a></li>
+							<li><a href="PageContact.html">CONTACTS</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="visible-sm-block clearfix"></div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead">NOS SPONSORS</h4>
+						<ul class="fh5co-list-check">
+							<li><a href="#">APPLE</a></li>
+							<li><a href="#">SAMSUNG</a></li>
+							<li><a href="#">HP</a></li>
+							<li><a href="#">SONY</a></li>
+							<li><a href="#">CANON</a></li>
+							<li><a href="#">NIKON</a></li>
+							<li><a href="#">HAIER</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead ">PRODUITS</h4>
+						<ul class="fh5co-list-check">
+							<li><a href="pc-portables.html">PC PORTABLES</a></li>
+							<li><a href="telephones.html">TELEPHONES</a></li>
+							<li><a href="cameras.html">APPAREILS PHOTOS</a></li>
+							<li><a href="televisions.html">TELEVISIONS</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="row fh5co-row-padded fh5co-copyright">
+				<div class="col-md-5">
+					<p><small>&copy; By CDA Elitech Students. All Rights Reserved. <br>Designed & Developped by: <a>Outhmane Dahmoune</a> | <a >Mohammed El Aouad</a> | <a>Hamza Kassa</a></small></p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+    <!-- Load compte list -->
+    <script src="../jquery/listeGestionCompte.js"></script>
+    <!-- Insert compte-->
+    <script src="../jquery/ajouterCompte.js"></script>
+	 <!-- Delete compte-->
+    <script src="../jquery/supprimerCompte.js"></script>
+    <!-- Update compte-->
+	<script src="../jquery/modifierCompte.js"></script>
+	<!-- Deconnexion-->
+    <script src="../jquery/deconnexion.js"></script>
+	</body>
+</html>

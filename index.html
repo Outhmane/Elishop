@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+
+<html class="no-js"> 
+
+
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Elishop &mdash; Nos produits sont les meilleures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="Views/css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="Views/css/icomoon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="Views/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="Views/css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="Views/css/magnific-popup.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="Views/css/style.css">
+	<!-- Modernizr JS -->
+	<script src="Views/js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+        <style type="text/css" >
+          #modalinscription
+		  {
+        	width: 70%;
+            margin-left: 140px;
+           }
+        </style>
+	</head>
+
+	<body>
+     <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" id="modalinscri">
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+					   
+
+					
+					<form  id="formInscription" method="post" class="fh5co-form animate-box" data-animate-effect="fadeIn" style="text-align: center;">
+						<h2>S'inscrire</h2>
+						
+						<div class="form-group" id="modalinscription">
+							<label for="nom" class="sr-only">Nom</label>
+							<input type="text" class="form-control" id="nom" placeholder="Nom" autocomplete="off">
+						</div>
+						<div class="form-group" id="modalinscription">
+							<label for="prenom" class="sr-only">Prenom</label>
+							<input type="text" class="form-control" id="prenom" placeholder="Prenom" autocomplete="off">
+						</div>
+						<div class="form-group" id="modalinscription">
+							<label for="adresse" class="sr-only">Adresse</label>
+							<input type="text" class="form-control" id="adresse" placeholder="Adresse" autocomplete="off">
+						</div>
+						<div class="form-group" id="modalinscription">
+							<label for="telephone" class="sr-only">Telephone</label>
+							<input type="text" class="form-control" id="telephone" placeholder="Telephone" autocomplete="off">
+						</div>
+						<div class="form-group" id="modalinscription">
+							<label for="email" class="sr-only">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="email@exemple.com" autocomplete="off">
+						</div>
+						
+						<div class="form-group" id="modalinscription">
+							<label for="MDP" class="sr-only">Mot de passe</label>
+							<input type="password" class="form-control" id="MDP" placeholder="mot de passe" autocomplete="off">
+						</div>
+						<div class="form-group" id="modalinscription">
+							<label for="confmtdp" class="sr-only">Confirmation du mot de passe </label>
+							<input type="password" class="form-control" id="confmtdp" placeholder="Confirmation du mot de passe" autocomplete="off">
+							
+						</div>
+						<label  style="color: red; display: none;" id="erreurPasse">Le mot de passe et la confirmation ne sont pas identiques </label>
+						<div class="form-group" >
+							<p>Déja inscrit ? <a href="index.html">Se connecter</a></p>
+						</div>
+						<div class="form-group">
+							<input type="button" onclick="insererUtilisateur()" value="Enregistrer" class="btn btn-primary">
+						</div>
+					</form>
+					
+            </div>
+            </div>
+     </div>
+
+		
+	<header id="fh5co-header" role="banner">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header"> 
+				
+				<a  class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"></a>
+				<a class="navbar-brand" href="index.html">ELISHOP</a>
+				</div>
+				
+				
+				
+				<div id="fh5co-navbar" class="navbar-collapse collapse">
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html"><span >ACCEUIL </span></a></li>
+						<li><a href="Views/pc-portables.html"><span>PC PORTABLES </span></a></li>
+						<li><a href="Views/telephones.html"><span>TELEPHONES </span></a></li>
+						<li><a href="Views/cameras.html"><span>APPAREIL PHOTO </span></a></li>
+						<li><a href="Views/televisions.html"><span>TELEVISIONS </span></a></li>
+
+						<li>
+							
+						  <div class="dropdown" id="gestionAdmin" style=" display: none; margin-top: 5px;">
+								   
+								 <a class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="dropdownMenuButton" >
+   											 
+
+								  		<span>Gestion<span class="border"></span></span>
+								 </a>
+								  <div class="dropdown-menu"  aria-labelledby="dropdownMenuButton"   style="min-width: 360px !important;  padding: 21px !important;"  >
+								  
+								    <div class="form-group" class="px-4 px-3">
+								      <a href="Views/Gestionproduits.html">Gestion des produits</a>
+								    </div>
+								    <div class="form-group" class="px-4 px-3">
+								      <a href="Views/Gestioncompte.html">Gestion des comptes</a>
+								    </div>
+								    
+									<button type="button" onclick="deconnexion()" id="deconnecter" class="btn btn-primary">Se déconnecter</button>
+								  </div>
+								</div>
+
+
+
+						</li>		
+	
+						<li>
+							
+						  <div id="Auth" class="dropdown">
+								   
+								 <a class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  id="dropdownMenuButton" style="
+   											 padding-top: 10px;">
+   											 <img src="https://img.icons8.com/pastel-glyph/64/000000/user-male--v1.png" style="width: 30px" /></br>
+
+								  		<span>CONNECTEZ-VOUS</span>
+								 </a>
+								  <div class="dropdown-menu"  aria-labelledby="dropdownMenuButton"   style="min-width: 360px !important;  padding: 21px !important;"  >
+								  <form class="px-4 py-3"  method="post" >
+								    <div class="form-group" class="px-4 px-3">
+								      <label for="connecterEmail">Addresse Email </label>
+								      <input type="email" class="form-control" name="email" id="connecterEmail" placeholder="email@exemple.com">
+								    </div>
+								    <div class="form-group">
+								      <label for="connecterMDP">Mot de passe</label>
+								      <input type="password" class="form-control" name="connecterMDP" id="connecterMDP" placeholder="Mot de passe">
+									</div>
+									<label style="color: red; display: none;" id="erreurAuthentifiaction">L'email ou le mot de passe est incorrecte !!</label>
+								    <button type="button" onclick="Authentification()" class="btn btn-primary">Se connecter</button>
+								  </form>
+								  
+								  <a class="dropdown-item"  data-toggle="modal" data-target=".bs-example-modal-lg">Nouveau ici ? S'inscrire</a> </br>
+								  </div>
+								</div>
+
+
+
+						</li>	
+						<li>
+							
+							<div style="display: none;" class="dropdown" id="gestionClient">
+									 
+								   <a class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" id="dropdownMenuButton" style="
+												  padding-top: 10px;">
+												  <img src="https://img.icons8.com/pastel-glyph/64/000000/user-male--v1.png" style="width: 30px" /></br>
+  
+											<span>Gérer Profil
+												
+											</span>
+									</a>
+									<div class="dropdown-menu"  aria-labelledby="dropdownMenuButton"   style="min-width: 200px !important;  padding: 21px !important; text-align: center;"  >
+									
+									  <div class="form-group" class="px-4 px-3">
+										<a href="Views/modifierProfil.html">Modifier Profil</a>						
+									  </div>
+                                      <div class="form-group" class="px-4 px-3">
+										<a href="Views/MesCommandes.html">Mes commandes</a>						
+									  </div>
+									  <button type="button" onclick="deconnexion()" id="deconnecter" class="btn btn-primary">Se déconnecter</button>
+										
+								  </div>
+  
+  
+  
+						  </li>	
+						
+						<li class="nav-item" >
+							
+            					<a id="panier" class="nav-link waves-effect" class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" href="Views/panier.html" style="
+   											 padding-top: 15px; display: none;">
+              						<span class="badge red z-depth-1 mr-1" id="compteurPanier"> 0 </span>
+              							<i class="fas fa-shopping-cart"></i>
+              							<img src="https://img.icons8.com/ios-filled/96/000000/add-shopping-cart.png" style="width: 30px" />
+             			 			<span class="clearfix d-none d-sm-inline-block" > Panier </span>
+          					 	 </a>
+         					 </li>					
+																			
+								</ul>
+				</div>
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- END .header -->
+	
+	<div class="fh5co-slider">
+		<div class="owl-carousel owl-carousel-fullwidth">
+		    <div class="item" style="background-image:url(Views/images/slide_1.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		
+									<h2 class="fh5co-lead">Trouvez le pc portable qui répond à vos besoins parmi les plus grandes marques d'ordinateur </h2>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="item" style="background-image:url(Views/images/slide_2.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		
+									<h2 class="fh5co-lead">Si vous recherchez un meilleur smartphone... Vous êtes dans la bonne place </h2>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="item" style="background-image:url(Views/images/slide_3.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		
+									<h2 class="fh5co-lead">Les meilleures caméras avec des prix magnifiques</h2>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		    <div class="item" style="background-image:url(Views/images/slide_4.jpg)">
+		    	<div class="fh5co-overlay"></div>
+		    	<div class="container">
+		    		<div class="row">
+		    			<div class="col-md-8 col-md-offset-2">
+			    			<div class="fh5co-owl-text-wrap">
+						    	<div class="fh5co-owl-text text-center to-animate">
+						    		
+									<h1 class="fh5co-lead">Voulez-vous une télévision idéale ? voici les meilleurs modèles en 4K dans notre magasin</h1s>
+						    	</div>
+						    </div>
+					    </div>
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+	</div>	
+	<div id="fh5co-main">
+		<!-- Features -->
+
+		<div id="fh5co-features">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-8 col-md-offset-2">
+						<h2 class="fh5co-section-lead">Caractéristiques principales</h2>
+						<h3 class="fh5co-section-sub-lead">Notre site peut vous offrir une meilleur expérience pour surfer dans le monde d'achats HIGH-TECH</h3>
+					</div>
+					<div class="fh5co-spacer fh5co-spacer-md"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6 fh5co-feature-border">
+						<div class="fh5co-feature">
+							<div class="fh5co-feature-icon to-animate">
+								<i class="icon-bag"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3>Votre panier</h3>
+								<p>Faites votre shopping en toute liberté</p>
+							</div>
+						</div>
+						<div class="fh5co-feature no-border">
+							<div class="fh5co-feature-icon to-animate">
+								<i class="icon-head"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3>La satisfaction du client</h3>
+								<p>Votre satisfaction vient avant tout.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<div class="fh5co-feature">
+							<div class="fh5co-feature-icon to-animate">
+								<i class="icon-microphone"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3>Enregistrement vocale</h3>
+								<p>On est à votre écoute tout le temps</p>
+							</div>
+						</div>
+						<div class="fh5co-feature no-border">
+							<div class="fh5co-feature-icon to-animate">
+								<i class="icon-clock2"></i>
+							</div>
+							<div class="fh5co-feature-text">
+								<h3>24/7</h3>
+								<p>Jamais fermé , surfez le temps que vous voulez...</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Features -->
+
+
+		<div class="fh5co-spacer fh5co-spacer-lg"></div>		
+		<!-- Products -->
+		<div class="container" id="fh5co-products">
+			<div class="row text-left">
+				<div class="col-md-8">
+					<h2 class="fh5co-section-lead">Nos produits</h2>
+					<h3 class="fh5co-section-sub-lead">Qui n’a jamais entendu le terme « appareils high-tech » ? En fait, il s’agit de tous les matériels issus de la haute technologie. Ce sont des appareils complexes, relevant des progrès scientifiques et technologiques les plus récents. Il s’agit des téléviseurs, ordinateurs, appareils photo numériques, Smartphones, tablettes, drones, électroménagers intelligents, montres connectées, bracelets connectés, etc. Les ingénieurs et les génies de la science les ont créés dans le but de faciliter davantage la vie de l’être humain tout en procurant du plaisir.</h3>
+				</div>
+				<div class="fh5co-spacer fh5co-spacer-md"></div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product">
+						<img src="Views/images/slide_1.jpg"  class="img-responsive img-rounded to-animate">
+						<h4>Nos ordinateurs portables</h4>
+						<p>Découvrez nos gammes de PC portables selon vos besoins : PC Ultraportable, PC Portable Gamer, ou Chromebook parmi nos plus grandes marques : Asus, HP, Acer, MSI, Lenovo et Microsoft.</p>
+						
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product">
+						<img src="Views/images/slide_2.jpg"  class="img-responsive img-rounded to-animate">
+						<h4>Nos smartphones </h4>
+						<p>Trouver le smartphone idéal qui répond le mieux à ses besoins n'est pas toujours simple. Il faut prendre en compte de nombreux critères avant de faire son choix. Pas de panique ! ELISHOP vous les livres les clés pour bien choisir un smartphone.</p>
+					
+					</div>
+				</div>
+				<div class="visible-sm-block visible-xs-block clearfix"></div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product">
+						<img src="Views/images/slide_3.jpg"  class="img-responsive img-rounded to-animate">
+						<h4>Nos Appareils photo</h4>
+						<p>Rares sont les voyageurs qui partent sans appareil photo ! Beaucoup souhaitent en effet garder une trace de leur voyage grâce aux photos. Mais à l’heure du numérique, en 2020, les possibilités sont nombreuses, infinies presque on pourrait dire ! Alors, quel appareil photo choisir pour voyager ? ELISHOP vous propose des appareils photo de hautes gammes .</p>
+					
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-mb30">
+					<div class="fh5co-product">
+						<img src="Views/images/slide_4.jpg"  class="img-responsive img-rounded to-animate">
+						<h4>Nos televisions</h4>
+						<p>Besoin d'un tv avec une vue claire et 4K , ELISHOP vous propose de nombreux tv avec des multiples resolutions de votre choix !!</p>
+					
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="fh5co-spacer fh5co-spacer-lg"></div>
+
+		<div id="fh5co-clients">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="Views/images/client_A.png" class="img-responsive" ></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="Views/images/client_B.png"  class="img-responsive"></div>
+					<div class="visible-sm-block visible-xs-block clearfix"></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="Views/images/client_C.png" class="img-responsive"></div>
+					<div class="col-md-3 col-sm-6 col-xs-6 col-xxs-12 fh5co-client-logo text-center to-animate"><img src="Views/images/client_D.png"  class="img-responsive"></div>
+			
+
+				</div>
+			</div>
+		</div>
+
+		<div class="fh5co-bg-section" style="background-image: url(Views/images/slide_2.jpg); background-attachment: fixed;">
+			<div class="fh5co-overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="fh5co-hero-wrap">
+							<div class="fh5co-hero-intro text-center">
+								<h1 class="fh5co-lead"><span class="quo">&ldquo;</span>La vente commence quand le client dit : Non. <span class="quo">&rdquo;</span></h1>
+								<p class="author">&mdash; <cite>Elmer G. Leterman </cite></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<footer id="fh5co-footer">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="fh5co-footer-widget">
+						<h2 class="fh5co-footer-logo">ELISHOP</h2>
+						<p>Ce site est à votre disposition 24h/24 7j/7 avec experience professionnelle dans le monde du HIGH TECHNOLOGIES</p>
+					</div>
+					<div class="fh5co-footer-widget">
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead ">ENTREPRISE</h4>
+						<ul>
+							<li><a href="#">QUI SOMMES-NOUS ?</a></li>
+							<li><a  href="Views/PageContact.html">CONTACTS</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="visible-sm-block clearfix"></div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead">NOS Marque</h4>
+						<ul class="fh5co-list-check">
+							<li><a href="#">APPLE</a></li>
+							<li><a href="#">SAMSUNG</a></li>
+							<li><a href="#">HP</a></li>
+							<li><a href="#">SONY</a></li>
+							<li><a href="#">CANON</a></li>
+							<li><a href="#">NIKON</a></li>
+							<li><a href="#">HAIER</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead ">PRODUITS</h4>
+						<ul class="fh5co-list-check">
+							<li><a href="Views/pc-portables.html">PC PORTABLES</a></li>
+							<li><a href="Views/telephones.html">TELEPHONES</a></li>
+							<li><a href="Views/cameras.html">APPAREILS PHOTOS</a></li>
+							<li><a href="Views/televisions.html">TELEVISIONS</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row fh5co-row-padded fh5co-copyright">
+				<div class="col-md-5">
+					<p><small>&copy; By CDA Elitech Students. All Rights Reserved. <br>Designed & Developped by: <br><a >Outhmane Dahmoune</a> <br> <a>Mohammed El Aouad</a> <br> <a >Hamza Kassa</a></small></p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+
+
+	<!-- jQuery -->
+	<script src="Views/js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="Views/js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="Views/js/bootstrap.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="Views/js/owl.carousel.min.js"></script>
+	<!-- Waypoints -->
+	<script src="Views/js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="Views/js/jquery.magnific-popup.min.js"></script>
+	<!-- Main JS -->
+	<script src="Views/js/main.js"></script>
+    <!-- Inscription-->
+    <script src="jquery/inscription.js"></script>
+	<!-- Authentification-->
+	<script src="jquery/Authentification.js"></script> 
+	<!-- Verification session-->
+	<script src="jquery/verifSession.js"></script> 
+	<!-- Deconnexion-->
+	<script src="jquery/deconnexion.js"></script>
+	<!-- panier-->
+    <script src="jquery/index.js"></script>
+	</body>
+</html>

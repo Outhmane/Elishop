@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Elishop &mdash; Nos produits sont les meilleures</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+
+
+  <!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Webfonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<!-- Theme Style -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	</head>
+	<body>
+	
+		
+	<header id="fh5co-header" role="banner">
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="container-fluid">
+				<div class="navbar-header"> 
+				<!-- Mobile Toggle Menu Button -->
+				<a  class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#fh5co-navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+				<a class="navbar-brand" href="../index.html">ELISHOP</a>
+				
+				
+				</div>
+				
+				
+				
+				<div id="fh5co-navbar" class="navbar-collapse collapse">
+					
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="../index.html"><span>ACCEUIL <span class="border"></span></span></a></li>
+						<li><a href="pc-portables.html"><span>PC PORTABLES <span class="border"></span></span></a></li>
+						<li><a href="telephones.html"><span>TELEPHONES <span class="border"></span></span></a></li>
+						<li><a href="cameras.html"><span>APPAREILS PHOTO <span class="border"></span></span></a></li>
+						<li><a href="televisions.html"><span>TELEVISIONS <span class="border"></span></span></a></li>
+					
+						  <li>
+							  
+							  <div id="gestionClient" class="dropdown">
+									   
+									 <a class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#" id="dropdownMenuButton" style="
+													padding-top: 10px;">
+													<img src="https://img.icons8.com/pastel-glyph/64/000000/user-male--v1.png" style="width: 30px" /></br>
+	
+											  <span>Gérer Profil
+												  
+											  </span>
+									  </a>
+									  <div class="dropdown-menu"  aria-labelledby="dropdownMenuButton"   style="min-width: 200px !important;  padding: 21px !important; text-align: center;"  >
+									  
+										<div class="form-group" class="px-4 px-3">
+										  <a href="modifierProfil.html">Modifier Profil</a>						
+										</div>
+										<div class="form-group" class="px-4 px-3">
+											<a href="MesCommandes.html">Mes commandes</a>						
+										  </div>
+  
+										  <button type="button" onclick="deconnexion()" id="deconnecter" class="btn btn-primary">Se déconnecter</button>
+										  
+									</div>
+	
+	
+	
+							</li>	
+						  
+						  <li class="nav-item" >
+							  
+								  <a class="nav-link waves-effect" id="panier" class="btn btn-secondary dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false" href="panier.html" style="
+												  padding-top: 15px;">
+										<span class="badge red z-depth-1 mr-1" id="compteurPanier"> 0 </span>
+											<i class="fas fa-shopping-cart"></i>
+											<img src="https://img.icons8.com/ios-filled/96/000000/add-shopping-cart.png" style="width: 30px" />
+										<span class="clearfix d-none d-sm-inline-block" > Panier </span>
+									  </a>
+								</li>		
+								</ul>
+
+										 
+								</div>
+					
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- END .header -->
+	
+	<aside class="fh5co-page-heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="fh5co-page-heading-lead">
+						Mon profil
+						<span class="fh5co-border"></span>
+					</h1>
+					
+				</div>
+			</div>
+		</div>
+	</aside>
+	
+
+	
+  <form  style="text-align: center;">
+	<div class="form-group">
+   <label  for="modifierNom">Nom</label>
+   <input  style="margin-left: 600px;width: 300px;"class="form-control" type="text" id="modifierNom"/>
+   <a onclick="enabledInput(1)">Modifier</a>
+   <br>
+   <label for="modifierPrenom">Prenom</label>
+   <input  style="margin-left: 600px;width: 300px;" class="form-control" type="text" id="modifierPrenom"/>
+   <a onclick="enabledInput(2)">Modifier</a>
+   <br>
+   <label for="modifAdresse">Adresse</label>
+   <input style="margin-left: 600px;width: 300px;" class="form-control" type="text" id="modifierAdresse"/>
+   <a onclick="enabledInput(3)">Modifier</a>
+   <br>
+   <label for="modifNumTel">Numero telephone</label>
+   <input  style="margin-left: 600px;width: 300px;" class="form-control" type="text" id="modifierNumTel"/>
+   <a onclick="enabledInput(4)">Modifier</a>
+   <br>
+   <label for="modifEmail">Email</label>
+   <input  style="margin-left: 600px;width: 300px;" class="form-control" type="text" id="modifierEmail"/>
+   <a onclick="enabledInput(5)">Modifier</a>
+   <br>
+   <label for="modifPassword">Password</label>
+   <input  style="margin-left: 600px;width: 300px;" class="form-control" type="password" id="modifierPassword"/>
+   <a onclick="enabledInput()">Modifier</a>
+   <br>
+   <br>
+   <button class="btn btn-primary" type="button" onclick="modifSauvegarder()" id="sauvegarder">Sauvegarder</button>
+   </div>
+  </form> 
+
+		
+	<footer id="fh5co-footer">
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-6">
+					<div class="fh5co-footer-widget">
+							<h2 class="fh5co-footer-logo">ELISTORE</h2>
+						<p>Ce site est à votre disposition 24h/24 7j/7 avec experience professionnelle dans le monde du HIGH TECHNOLOGIES</p>
+					</div>
+					<div class="fh5co-footer-widget">
+						<ul class="fh5co-social">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin"></i></a></li>
+							<li><a href="#"><i class="icon-youtube"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead ">ENTREPRISE</h4>
+						<ul>
+							<li><a href="#">QUI SOMMES-NOUS ?</a></li>
+							<li><a href="PageContact.html">CONTACTS</a></li>
+							
+						</ul>
+					</div>
+				</div>
+				
+				<div class="visible-sm-block clearfix"></div>
+
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead">NOS SPONSORS</h4>
+						<ul class="fh5co-list-check">
+							<li><a href="#">APPLE</a></li>
+							<li><a href="#">SAMSUNG</a></li>
+							<li><a href="#">HP</a></li>
+							<li><a href="#">SONY</a></li>
+							<li><a href="#">CANON</a></li>
+							<li><a href="#">NIKON</a></li>
+							<li><a href="#">HAIER</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-6">
+					<div class="fh5co-footer-widget top-level">
+						<h4 class="fh5co-footer-lead ">PRODUITS</h4>
+						<ul class="fh5co-list-check">
+							<li><a href="pc-portables.html">PC PORTABLES</a></li>
+							<li><a href="telephones.html">TELEPHONES</a></li>
+							<li><a href="cameras.html">APPAREILS PHOTOS</a></li>
+							<li><a href="televisions.html">TELEVISIONS</a></li>
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row fh5co-row-padded fh5co-copyright">
+				<div class="col-md-5">
+					<p><small>&copy; By CDA Elitech Students. All Rights Reserved. <br>Designed & Developped by: <a >Outhmane Dahmoune</a> | <a>Mohammed El Aouad</a> | <a>Hamza Kassa</a></small></p>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Magnific Popup -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<!-- Main JS -->
+	<script src="js/main.js"></script>
+	<!-- Deconnexion-->
+	<script src="../jquery/deconnexion.js"></script>
+	<!-- Update-->
+	<script src="../jquery/modifierProfil.js"></script>
+	</body>
+</html>
